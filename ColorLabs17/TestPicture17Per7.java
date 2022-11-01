@@ -49,11 +49,15 @@ public class TestPicture17Per7
     /**/
         //access each index
     System.out.println(pixels[17]);
+    pixels[17].setColor(Color.yellow);
+    ferris1.explore();
     //access each pixel
     Pixel spot = ferris1.getPixel(100,100);
     
-    System.out.println(pixels[17].getColor());
-    System.out.println(spot);
+   
+    
+    //System.out.println(pixels[17].getColor());
+    //System.out.println(spot);
 /*
     pixels[17].setColor(Color.blue);
     spot.setColor(new Color(252,252,252));
