@@ -34,7 +34,7 @@ public class TestPicture17Per7
      Picture cute = new Picture("images/kitten2.jpg");
      Picture ferris3 = new Picture("images/2000 ferris wheel2.jpg");
 
-     cute.explore();
+     cute.explore(); //method. a method does something
      ferris1.explore();
      
      //makes an array of pixels
@@ -52,9 +52,12 @@ public class TestPicture17Per7
     pixels[17].setColor(Color.yellow);
     ferris1.explore();
     //access each pixel
-    Pixel spot = ferris1.getPixel(100,100);
-    
-   
+    Pixel spot = ferris1.getPixel(50,50);
+    spot.setColor(Color.green);
+    spot = ferris1.getPixel(50, 51);
+    spot.setColor(Color.pink);
+    ferris1.explore();
+   //11.02 lets get changing
     
     //System.out.println(pixels[17].getColor());
     //System.out.println(spot);
