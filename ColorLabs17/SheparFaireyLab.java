@@ -9,7 +9,7 @@ import java.awt.*;
 import java.util.*;
 import java.util.List; // resolves problem with java.awt.List and java.util.List
 
-public class SheparFaireyLab
+public class SheparFaireyLab 
 {
     /**
      * main method, to test the picture
