@@ -16,9 +16,30 @@ public class AdjustColors
         pixels = splatfest.getPixels();
         double adjustR, adjustG, adjustB;
         int adjustedR, adjustedG, adjustedB;
-        int r, g, b;            
+        int r, g, b;          
+        //darken picture
+        int darkR, darkG, darkB;
+        double factor;
+        factor = 0.3;
         
-        /*
+        for (Pixel spot: pixels){
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            darkR = (int)(r * factor);
+            darkG = (int) (g * factor);
+            darkB = (int) (b * factor);
+            
+            spot.setRed(darkR);
+            spot.setGreen(darkG);
+            spot.setBlue(darkB);
+            
+        }
+        
+        splatfest.explore();
+        
+         /*
         for (Pixel spot : pixels){
             
             adjustR = 0.5;
@@ -45,7 +66,10 @@ public class AdjustColors
             spot.setGreen(adjustedG);
         
         }
+        
+        
         */
+       /*
         splatfest.explore();
         
         for (Pixel spot: pixels){
@@ -58,6 +82,6 @@ public class AdjustColors
         }
         
         splatfest.explore();
-        
+        */
     }
 }
