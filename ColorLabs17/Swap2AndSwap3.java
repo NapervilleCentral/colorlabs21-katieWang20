@@ -10,7 +10,7 @@ import java.util.*;
 import java.util.List;
 //swap2 colors – swap the green value for the red value
 //swap3 colors – swap all three red = green, green = blue, blue = red
-public class Swap2And3
+public class Swap2AndSwap3
 {
     public static void main (String[] args){
         

@@ -10,7 +10,7 @@ import java.awt.*;
 import java.util.*;
 import java.util.List;
  // resolves problem with java.awt.List and java.util.List
-public class Colors
+public class MaxColors
 {
 
       public static void main(String[] args)

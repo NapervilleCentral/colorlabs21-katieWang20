@@ -11,11 +11,15 @@ import java.awt.*;
 import java.util.*;
 import java.util.List;
 
-public class GrayScale
+public class DarkenAndGrayScale
 {
     // instance variables - replace the example below with your own
     public static void main (String[] args){
         Picture splatfest = new Picture("images//Splatfest.png");
+        Picture splatfest1 = new Picture("images//Splatfest.png");
+        
+        
+        
         Pixel[] pixels;
         
         pixels = splatfest.getPixels();
@@ -36,6 +40,29 @@ public class GrayScale
         
         }
         splatfest.explore();
+        
+        Pixel[] pixels1;
+        int darkR, darkG, darkB;
+        double factor;
+        factor = 0.3;
+        pixels1 = splatfest1.getPixels();
+        for (Pixel spot: pixels1){
+            int r, g, b;
+            r = spot.getRed();
+            g = spot.getGreen();
+            b = spot.getBlue();
+            
+            darkR = (int)(r * factor);
+            darkG = (int) (g * factor);
+            darkB = (int) (b * factor);
+            
+            spot.setRed(darkR);
+            spot.setGreen(darkG);
+            spot.setBlue(darkB);
+            
+        }
+        
+        splatfest1.explore();
     
     }    
     
