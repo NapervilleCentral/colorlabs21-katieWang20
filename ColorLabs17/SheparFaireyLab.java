@@ -18,18 +18,13 @@ public class SheparFaireyLab
     public static void main(String[] args)
     {
         
-         //opens selfie picture 
-          /**/
-         String fileName = FileChooser.pickAFile();
-         Picture pictObj = new Picture(fileName);
-         pictObj.explore();
-         
+ 
          //relative path
          //Picture apic = new Picture("images\\beach.jpg");
          //change with selfie picture
          Picture me = new Picture("images/selfie.jpg");
-         Picture me1 = new Picture("images/beach.jpg");
-         Picture me2 = new Picture("images/beach.jpg");
+         Picture me1 = new Picture("images/selfie.jpg");
+         Picture me2 = new Picture("images/selfie.jpg");
          
          Pixel[] pixels;
          
@@ -52,9 +47,46 @@ public class SheparFaireyLab
              spot.setGreen(gray);
              spot.setBlue(gray);
          }
+        
          
          me.explore();
+         me.write("images/gray");
+         Pixel[] pixels2;
+         Picture gray = new Picture("images/gray");
          
+         pixels2 = gray.getPixels();
+         
+         for (Pixel spot2 : pixels2){
+             int r, g, b;
+             r = spot2.getRed();
+             g = spot2.getGreen();
+             b = spot2.getBlue();
+             
+             //if (r >= 249 && g >= 249 && b >= 244){
+                 //r = 222
+             //    spot2.setRed(222); 
+             //    spot2.setBlue(255);
+             //    spot2.setBlue(255);
+                
+              if (r > 207 && g > 207 && b > 207){
+                 spot2.setRed(222);
+                 spot2.setGreen(255);
+                 spot2.setBlue(255);
+             }else if (r > 148 && g > 158 && b > 148){
+                 spot2.setRed(0);
+                 spot2.setBlue(51);
+                 spot2.setGreen(153);
+             
+             }else if ((35 > r &&r >= 0) && (35 > g &&g >= 0) && (35 >= b && b >= 0)){
+                 spot2.setRed(153);
+                 spot2.setGreen(0);
+                 spot2.setBlue(0);
+                
+             } 
+             
+         }
+         
+         gray.explore();
          /**
           * method 1 change
           * 
