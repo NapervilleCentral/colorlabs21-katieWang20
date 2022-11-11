@@ -12,3 +12,5 @@ AUTHORS:
 USER INSTRUCTIONS:
 
  turn to grayscale
+
+purple is too harsh. my eyes also dont exist. At least it got the outline of my glasses
