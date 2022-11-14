@@ -190,28 +190,28 @@ public class SheparFaireyLab
              //    spot2.setBlue(255);
              //    spot2.setBlue(255);
                 
-              if (r > 207 && g > 207 && b > 207){
+              if (r > 207 ){
                  spot2.setRed(222);
                  spot2.setGreen(255);
                  spot2.setBlue(255);
-             }else if (r > 148 && g > 158 && b > 148){
+             }else if (r > 148 ){
                  spot2.setRed(0);
                  spot2.setBlue(51);
                  spot2.setGreen(153);
-             }else if(r > 98 && g > 98 && b > 98){
+             }else if(r > 98){
                  spot2.setRed(106);
                  spot2.setGreen(200);
                  spot2.setBlue(23);
-             }else if (r >=65 && g>=65 && b >=65){
+             }else if (r >=65){
                  spot2.setRed(233);
                  spot2.setGreen(100);
                  spot2.setBlue(10);
              
-             }else if ((20 >= r && 20 >= g  && 20 >= b) || (36 >= r && r>=33) ){
-                 spot2.setRed(153);
-                 spot2.setGreen(0);
-                 spot2.setBlue(200);
-             }else if (65 >= r && 65 >= g && 65 >= b){
+             }else if ((20 >= r)){
+                 spot2.setRed(150);
+                 spot2.setGreen(115);
+                 spot2.setBlue(165);
+             }else if (90 >= r ){
                  
                  spot2.setRed(53);
                  spot2.setGreen(70);

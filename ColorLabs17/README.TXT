@@ -28,4 +28,6 @@ added extra bucket (or statement) to highlight hair strands purple
 
 adjusted emphasis on shadows on face. And a little less purple.
 
-Ok this is good enough for me
+made the purple more muted
+
+outlining my chin with purple made things too muted. removed bucket for that.
