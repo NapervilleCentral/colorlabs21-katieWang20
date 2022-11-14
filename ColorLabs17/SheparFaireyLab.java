@@ -26,6 +26,7 @@ public class SheparFaireyLab
          Picture me1 = new Picture("images/selfie.jpg");
          Picture me2 = new Picture("images/selfie.jpg");
          
+         
          Pixel[] pixels;
          
          pixels = me.getPixels();
@@ -35,7 +36,7 @@ public class SheparFaireyLab
          int arrayLength = pixels.length;
          //method 1
          //0-225 as range
-         
+         /*
          Pixel[] pixels1;
          pixels1 = me1.getPixels();
          
@@ -94,7 +95,7 @@ public class SheparFaireyLab
          
          int min = 13;
          int max = 255;
-         int range = min - max;
+         int range = max - min;
          
          Pixel[] pixels2;
          
@@ -119,11 +120,14 @@ public class SheparFaireyLab
          int divi3 = divi1 * 3;
          int divi4 = max;
          
+         System.out.println(divi1+ "   "+ divi2+ "   "+ divi3);
+         
          for (Pixel spot : pixels2){
              int r, g, b;
              r = spot.getRed();
              g = spot.getGreen();
              b = spot.getBlue();
+             
              if (r <= divi1 && g <= divi1 && b <= divi1){
                  spot.setRed(0);
                  spot.setGreen(48);
@@ -141,6 +145,7 @@ public class SheparFaireyLab
                  spot.setRed(250);
                  spot.setGreen(227);
                  spot.setBlue(173);
+             
              }            
          
              
@@ -149,7 +154,8 @@ public class SheparFaireyLab
          //method2
          
          me2.explore();
-         
+         */
+        
          //System.out.println(Arrays.toString(pixels1));
          //turn into grayscale
          for (Pixel spot : pixels){
@@ -195,28 +201,28 @@ public class SheparFaireyLab
              }else if(r > 98 && g > 98 && b > 98){
                  spot2.setRed(106);
                  spot2.setGreen(200);
-                 spot2.setRed(23);
+                 spot2.setBlue(23);
+             }else if (r >=65 && g>=65 && b >=65){
+                 spot2.setRed(233);
+                 spot2.setGreen(100);
+                 spot2.setBlue(10);
              
-             }else if ((35 > r &&r >= 0) && (35 > g &&g >= 0) && (35 >= b && b >= 0)){
+             }else if ((20 >= r && 20 >= g  && 20 >= b) || (36 >= r && r>=33) ){
                  spot2.setRed(153);
                  spot2.setGreen(0);
                  spot2.setBlue(200);
-             }else if (70 > r && 70 > g && 70 > b){
+             }else if (65 >= r && 65 >= g && 65 >= b){
                  
                  spot2.setRed(53);
                  spot2.setGreen(70);
                  spot2.setBlue(34);
-             }else{
-                 spot2.setRed(233);
-                 spot2.setGreen(100);
-                 spot2.setBlue(10);
-             } 
              
+             
+             }
          }
-         
          gray.explore();
          
-         gray.write("images/katie1.jpg");
+         gray.write("images/katie1.png");
          /**
           * method 1 change
           * 
